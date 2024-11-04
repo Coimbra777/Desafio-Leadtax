@@ -1,4 +1,29 @@
-# Setup Docker Laravel 10 com PHP 8.1
+# Desafio Técnico: Web Scraping de Produtos de um E-commerce
+
+## Descrição do Desafio
+Este projeto tem como objetivo desenvolver uma aplicação Laravel que realiza o web scraping de produtos de um site de e-commerce, como o Mercado Livre. A aplicação extrai informações essenciais sobre os produtos e as armazena em um banco de dados, disponibilizando-as em uma interface web para visualização.
+
+## Funcionalidades
+- **Web Scraping:** Coleta de dados de produtos, incluindo nome, preço, imagem e descrição.
+- **Armazenamento em Banco de Dados:** Os dados coletados são armazenados em um banco de dados MySQL.
+- **Interface Web:** Visualização dos produtos coletados em uma interface amigável.
+- **Command para recuperar dados:** Comando cronjob do Laravel para recuperar os dados dos produtos.
+
+
+## Tecnologias Utilizadas
+- **Laravel:** Framework PHP para desenvolvimento web.
+- **MySQL:** Sistema de gerenciamento de banco de dados.
+- **Guzzle:** Biblioteca PHP para realizar requisições HTTP.
+- **Blade:** Motor de template do Laravel para renderização de views.
+
+## Requisitos
+- PHP 8.0 ou superior
+- Composer
+- MySQL
+- Laravel
+
+## Instalação
+Siga os passos abaixo para instalar e configurar a aplicação:
 
 ### Passo a passo
 
@@ -64,6 +89,12 @@ Gere a key do projeto Laravel
 php artisan key:generate
 ```
 
+Rode as migrations
+
+```sh
+php artisan migrate
+```
+
 Rode o command para recuperar os produtos do Marketplace
 
 ```sh
@@ -71,4 +102,4 @@ php artisan scrape:products
 ```
 
 Acesse o projeto
-[http://localhost:8989](http://localhost:8989/products)
+(http://localhost:8989/products)
