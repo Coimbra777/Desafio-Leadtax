@@ -5,7 +5,7 @@
 Clone Repositório
 
 ```sh
-git clone -b laravel-10-com-php-8.1 https://github.com/especializati/setup-docker-laravel.git app-laravel
+git clone -b laravel-10-com-php-8.1 https://github.com/Coimbra777/Desafio-Leadtax.git
 ```
 
 ```sh
@@ -64,5 +64,11 @@ Gere a key do projeto Laravel
 php artisan key:generate
 ```
 
+Rode o command para recuperar os produtos do Marketplace
+
+```sh
+php artisan scrape:products
+```
+
 Acesse o projeto
-[http://localhost:8989](http://localhost:8989)
+[http://localhost:8989](http://localhost:8989/products)
